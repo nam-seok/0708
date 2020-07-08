@@ -12,13 +12,14 @@ app.set('view engine' , 'ejs')
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json())
 
+app.use(express.static(__dirname + '/public'))
 
 var cors = require('cors')
 app.use(cors())
 
-app.get('/' ,(req, res, next) =>{
-    res.send('Success')
-})
+//app.get('/' ,(req, res, next) =>{
+//    res.send('Success')
+//})
 
 app.use('/', apiRouter)
 
