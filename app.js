@@ -5,6 +5,7 @@ var ejs = require('ejs')
 var app = express()
 require('dotenv').config()
 var apiRouter  = require('./routes/router')
+var mongoose  = require('mongoose')
 
 app.set('views', path.resolve(__dirname + '/views'))
 app.set('view engine' , 'ejs')
