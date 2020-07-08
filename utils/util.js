@@ -175,6 +175,7 @@ var change_owner = async (KEY , owner)=>{
 var query ={
     queryAllData: query_all_data,
     queryData : query_data,
-    createCar : create_car
+    createCar : create_car,
+    changeOwner: change_owner
 }
 module.exports= query;
